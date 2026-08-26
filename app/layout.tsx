@@ -3,7 +3,7 @@ import { DM_Serif_Display, Manrope } from "next/font/google";
 import Link from "next/link";
 import { Landmark } from "lucide-react";
 
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { BASE_URL, SITE_NAME } from "@/lib/site";
 
 import "./globals.css";
 
@@ -21,7 +21,7 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL(BASE_URL),
   title: {
     default: `${SITE_NAME} | Free 2026 Tool`,
     template: `%s | ${SITE_NAME}`,
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: SITE_URL,
+    url: BASE_URL,
     siteName: SITE_NAME,
     title: "Mortgage Refinance Break-Even Calculator",
     description:

@@ -6,7 +6,7 @@ import { ArrowLeft, BookOpenCheck, CircleDollarSign, Clock3 } from "lucide-react
 import RefinanceCalculator from "@/components/RefinanceCalculator";
 import { calculateRefinance } from "@/lib/mortgageCalculator";
 import { findScenario, REFINANCE_SCENARIOS } from "@/lib/refinanceScenarios";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { BASE_URL, SITE_NAME } from "@/lib/site";
 
 interface ScenarioPageProps {
   params: {
@@ -64,7 +64,7 @@ export default function ScenarioPage({ params }: ScenarioPageProps) {
     maximumFractionDigits: 0,
   });
   const amountLabel = `$${scenario.amount / 1000}k`;
-  const pageUrl = `${SITE_URL}/refinance/${scenario.amountSlug}/${scenario.ratesSlug}`;
+  const pageUrl = `${BASE_URL}/refinance/${scenario.amountSlug}/${scenario.ratesSlug}`;
   const breakEvenText = estimate.breakEvenMonths === null ? "not reached from required-payment savings" : `${estimate.breakEvenMonths} months`;
 
   const faqs = [
