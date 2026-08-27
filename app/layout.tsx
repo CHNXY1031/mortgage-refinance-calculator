@@ -90,7 +90,7 @@ export default function RootLayout({
             </div>
             <div className="lg:text-right">
               <p>© 2026 Refinance Ledger</p>
-              <a href="https://uptime-pulse-saas.vercel.app/?utm_source=mortgage-refinance-calculator&amp;utm_medium=referral&amp;utm_campaign=protected_by" target="_blank" rel="noopener noreferrer" className="mt-3 block text-xs text-white/40 underline decoration-white/15 underline-offset-4 transition hover:text-white">Protected by UptimePulse — Free Website &amp; SSL Monitor</a>
+              <a href="https://uptime-pulse-saas.vercel.app/?utm_source=mortgage-refinance-calculator&amp;utm_medium=referral&amp;utm_campaign=protected_by" target="_blank" rel="noopener noreferrer nofollow" className="mt-3 block text-xs text-white/40 underline decoration-white/15 underline-offset-4 transition hover:text-white">Protected by UptimePulse — Free Website &amp; SSL Monitor</a>
             </div>
           </div>
         </footer>
